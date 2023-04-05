@@ -19,9 +19,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: 'Free Trial(9c4828ea-454d-4f86-8471-6624bdfaf94c)'
-    ScriptType: 'FilePath'
-    ScriptPath: '.\Multiply.ps1'
+- script: |
+    powershell -ExecutionPolicy ByPass -File ".\Multiply.ps1"
   displayName: 'Multiply Two Numbers'
