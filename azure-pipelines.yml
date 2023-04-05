@@ -19,6 +19,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- script: |
-    ".\Multiply.ps1"
-  displayName: 'Multiply Two Numbers'
+- task: PowerShell@2
+  inputs:
+    filePath: '.\Multiply.ps1'
+  displayName: "Multiply Two Numbers"
