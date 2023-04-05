@@ -20,5 +20,5 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    powershell -ExecutionPolicy ByPass -File ".\Multiply.ps1"
+    ".\Multiply.ps1"
   displayName: 'Multiply Two Numbers'
