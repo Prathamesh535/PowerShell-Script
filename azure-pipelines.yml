@@ -28,3 +28,7 @@ steps:
   inputs:
     filePath: 'HttpRequest.ps1'
   displayName: "Http Get Request"
+
+- script: |
+    powershell -ExecutionPolicy ByPass -File "Demo.ps1"
+  displayName: "Demo Sample"
