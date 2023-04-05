@@ -23,3 +23,8 @@ steps:
   inputs:
     filePath: 'Multiply.ps1'
   displayName: "Multiply Two Numbers"
+
+- task: PowerShell@2
+  inputs:
+    filePath: 'HttpRequest.ps1'
+  displayName: "Http Get Request"
