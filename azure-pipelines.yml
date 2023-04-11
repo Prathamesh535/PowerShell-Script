@@ -35,9 +35,8 @@ steps:
     From: 'jprathamesh882@gmail.com'
     Subject: 'Testing Email via Azure Devops'
     Body: 'Hello World'
-    BodyAsHtml: true
+    BodyAsHtml: false
     AddAttachment: false
     SmtpServer: 'smtp.gmail.com'
     SmtpUsername: 'jprathamesh882@gmail.com'
     SmtpPassword: 'swkcjhkkrkhhvhlj'
-  displayName: Sending Email via Azure Devops
