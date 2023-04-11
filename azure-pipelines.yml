@@ -28,11 +28,16 @@ steps:
   inputs:
     filePath: 'HttpRequest.ps1'
   displayName: "Http Get Request"
+
 - task: SendEmail@1
   inputs:
     To: 'jprathamesh857@gmail.com'
     From: 'jprathamesh882@gmail.com'
-    Subject: 'Test Mail'
+    Subject: 'Testing Email via Azure Devops'
     Body: 'Hello World'
-    BodyAsHtml: false
+    BodyAsHtml: true
     AddAttachment: false
+    SmtpServer: 'smtp.gmail.com'
+    SmtpUsername: 'jprathamesh882@gmail.com'
+    SmtpPassword: 'swkcjhkkrkhhvhlj'
+  displayName: Sending Email via Azure Devops
