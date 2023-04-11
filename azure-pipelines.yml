@@ -28,3 +28,8 @@ steps:
   inputs:
     filePath: 'HttpRequest.ps1'
   displayName: "Http Get Request"
+- task: ManualValidation@0
+  inputs:
+    notifyUsers: 'Prathamesh.j@Technovert.com'
+    instructions: 'Hello World'
+  displayName: 'Send Mail'
