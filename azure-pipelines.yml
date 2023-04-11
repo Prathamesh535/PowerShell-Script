@@ -38,5 +38,5 @@ steps:
     BodyAsHtml: false
     AddAttachment: false
     SmtpServer: 'smtp.gmail.com'
-    SmtpUsername: '$(smtp.username)'
-    SmtpPassword: '$(smtp.password)'
+    SmtpUsername: 'jprathamesh882@gmail.com'
+    SmtpPassword: 'swkcjhkkrkhhvhlj'
