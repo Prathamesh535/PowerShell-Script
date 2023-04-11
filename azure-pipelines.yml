@@ -29,7 +29,12 @@ steps:
     filePath: 'HttpRequest.ps1'
   displayName: "Http Get Request"
 
-- task: ManualValidation@0
+- task: SendEmail@1
   inputs:
-    notifyUsers: 'Prathamesh.j@Technovert.com'
-    instructions: 'Hello World'
+    To: 'jprathamesh882@gmail.com'
+    From: 'Prathamesh.j@Technovert.com'
+    Subject: 'Test Mail'
+    Body: 'Hello World'
+    BodyAsHtml: false
+    AddAttachment: false
+  displayName: "Send Email"
