@@ -28,13 +28,11 @@ steps:
   inputs:
     filePath: 'HttpRequest.ps1'
   displayName: "Http Get Request"
-
 - task: SendEmail@1
   inputs:
-    To: 'jprathamesh882@gmail.com'
-    From: 'Prathamesh.j@Technovert.com'
+    To: 'jprathamesh857@gmail.com'
+    From: 'jprathamesh882@gmail.com'
     Subject: 'Test Mail'
     Body: 'Hello World'
     BodyAsHtml: false
     AddAttachment: false
-  displayName: "Send Email"
